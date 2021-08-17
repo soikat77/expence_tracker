@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
           title: Text('Expence Tracker'),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
               width: double.infinity,
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
             Container(
               width: double.infinity,
               child: Card(
-                color: Colors.blueGrey,
+                color: Colors.blue[50],
                 elevation: 5,
                 child: Text('Indivisual Expences'),
               ),
