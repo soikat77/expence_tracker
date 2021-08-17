@@ -10,8 +10,25 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Expence Tracker'),
         ),
-        body: Center(
-          child: Text('All yor expences will show here'),
+        body: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              child: Card(
+                color: Colors.blue,
+                elevation: 5,
+                child: Text('Expence Bar in Date'),
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: Card(
+                color: Colors.blueGrey,
+                elevation: 5,
+                child: Text('Indivisual Expences'),
+              ),
+            ),
+          ],
         ),
       ),
     );
