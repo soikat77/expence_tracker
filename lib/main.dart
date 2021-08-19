@@ -55,6 +55,7 @@ class MyHomePage extends StatelessWidget {
                 elevation: 3,
                 margin: EdgeInsets.all(10),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       margin: EdgeInsets.all(10),
@@ -82,18 +83,16 @@ class MyHomePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          '\$ ${exp.ammount.toString()}',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                            color: Colors.blue,
-                          ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        '\$ ${exp.ammount.toString()}',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22,
+                          color: Colors.blue,
                         ),
-                      ],
+                      ),
                     ),
                   ],
                 ),
