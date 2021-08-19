@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/intl.dart';
 
 import './expences.dart';
 
@@ -53,7 +55,7 @@ class MyHomePage extends StatelessWidget {
               return Card(
                 color: Colors.blue[50],
                 elevation: 3,
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -73,7 +75,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            exp.date.toString(),
+                            DateFormat('cccc d MMM, yyyy').format(exp.date!),
                             style: TextStyle(
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
